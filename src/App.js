@@ -1,18 +1,22 @@
-import { Router, Switch, Route } from "react-router-dom";
-import { Navbar } from "./components";
+import { BrowserRouter, Router, Switch, Route } from "react-router-dom";
+import InfoSection from "./components/InfoSection";
+import Navbar from "./components/Navbar";
 
 import GlobalStyle from "./globalStyles";
 import Home from "./pages/Home";
 
 function App() {
   return (
-    <Router>
-      <Navbar />
-      {/* <Switch>
-        <Route path="/" exact component={Home} />
-      </Switch> */}
-      <GlobalStyle />
-    </Router>
+    <BrowserRouter>
+      {/* <Router > */}
+        <Navbar />
+        <Home />
+        <Switch>
+          <Route />
+        </Switch>
+        <GlobalStyle />
+      {/* </Router> */}
+    </BrowserRouter>
   );
 }
 
