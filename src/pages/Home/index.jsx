@@ -1,9 +1,16 @@
 import React from "react";
-import  InfoSection  from "../../components/InfoSection";
-import { homeObjOne } from "./data";
+import { InfoSection } from "../../components";
+import { homeObjOFour, homeObjOne, homeObjOThree, homeObjTwo } from "./data";
 
 const HomePage = () => {
-  return <InfoSection {...homeObjOne} />;
+  return (
+    <>
+      <InfoSection {...homeObjOne} />;
+      <InfoSection {...homeObjTwo} />;
+      <InfoSection {...homeObjOThree} />;
+      <InfoSection {...homeObjOFour} />;
+    </>
+  );
 };
 
 export default HomePage;
