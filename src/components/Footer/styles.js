@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { FaMagento } from "react-icons/fa";
 
 export const FooterContainer = styled.div`
   background-color: #101522;
@@ -107,6 +108,55 @@ export const FooterLink = styled(Link)`
   color: #fff;
   text-decoration: none;
   margin-bottom: 0.5rem;
+
+  &:hover {
+    color: #0467fb;
+    transition: 0.3s ease-out;
+  }
+`;
+
+export const SocialMedia = styled.section`
+  max-width: 1000px;
+  width: 100%;
+`;
+
+export const SocialMediaWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px auto 0 auto;
+  width: 90%;
+
+  @media screen and (max-width: 820px) {
+    flex-direction: column;
+  }
+`;
+
+export const SocialLogo = styled(Link)`
+  justify-self: start;
+  align-items: center;
+  margin-bottom: 16px;
+  text-decoration: none;
+  font-size: 2rem;
+  display: flex;
+  color: #fff;
+  cursor: pointer;
+`;
+
+export const SocialIcon = styled(FaMagento)`
+  margin-right: 10px;
+`;
+
+export const SocialIcons = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 240px;
+`;
+
+export const SocialIconLink = styled.a`
+  color: #fff;
+  font-size: 24px;
 
   &:hover {
     color: #0467fb;

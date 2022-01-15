@@ -1,4 +1,11 @@
 import React from "react";
+import {
+  FaFacebook,
+  FaGithub,
+  FaInstagram,
+  FaLinkedin,
+  FaYoutube,
+} from "react-icons/fa";
 import { Button } from "../../globalStyles";
 import {
   FooterContainer,
@@ -12,6 +19,12 @@ import {
   FooterLinksItems,
   FooterLinkTitle,
   FooterLink,
+  SocialMedia,
+  SocialMediaWrapper,
+  SocialIcons,
+  SocialIcon,
+  SocialIconLink,
+  SocialLogo,
 } from "./styles";
 
 const Footer = () => {
@@ -44,6 +57,8 @@ const Footer = () => {
               <FooterLink to="/">Investors</FooterLink>
               <FooterLink to="/">terms of Services</FooterLink>
             </FooterLinksItems>
+          </FooterLinksWrapper>
+          <FooterLinksWrapper>
             <FooterLinksItems>
               <FooterLinkTitle>Videos</FooterLinkTitle>
               <FooterLink to="/sign-up">How it works</FooterLink>
@@ -62,6 +77,41 @@ const Footer = () => {
             </FooterLinksItems>
           </FooterLinksWrapper>
         </FooterLinksContainer>
+
+        <SocialMedia>
+          <SocialMediaWrapper>
+            <SocialLogo>ULTRA</SocialLogo>
+            <SocialIcons>
+              <SocialIconLink href="/" target="_blank" aria-label="Facebook">
+                <FaFacebook />
+              </SocialIconLink>
+              <SocialIconLink
+                href="https://www.youtube.com/channel/UCHFf1uxTCTUkqZUiD1ywlfw"
+                target="_blank"
+                aria-label="Youtube"
+              >
+                <FaYoutube />
+              </SocialIconLink>
+              <SocialIconLink
+                href="https://www.linkedin.com/in/egberto-tin%C3%A9-de-oliveira-76b190141/"
+                target="_blank"
+                aria-label="Linkedin"
+              >
+                <FaLinkedin />
+              </SocialIconLink>
+              <SocialIconLink href="/" target="_blank" aria-label="Instagram">
+                <FaInstagram />
+              </SocialIconLink>
+              <SocialIconLink
+                href="https://github.com/Oliveira-86"
+                target="_blank"
+                aria-label="Github"
+              >
+                <FaGithub />
+              </SocialIconLink>
+            </SocialIcons>
+          </SocialMediaWrapper>
+        </SocialMedia>
       </FooterSubscription>
     </FooterContainer>
   );
