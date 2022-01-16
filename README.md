@@ -19,7 +19,7 @@
  ### Resposivity
 
 <div alignItem="end" justfyContent="spaceBetween">
-  <img width="600" height="300" style="margin:10px" src="assets/responsivity.gif"> 
+  <img max-width="600" max-height="300" src="assets/responsivity.gif"> 
  </div> 
  
  ### Technologies
