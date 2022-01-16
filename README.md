@@ -1,6 +1,6 @@
 # ULTRA APP
 
-#### I created this project to improve my skills in [Styled Components](https://styled-components.com/) a powerful tool to create CSS in Javascript files. This app is a responsive landing page with a nice designer.
+#### I created this project to improve my skills in [Styled Components](https://styled-components.com/) a powerful tool to create CSS in Javascript files. This app is a responsive landing page with a nice design.
 
 ## The App
 
